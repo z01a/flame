@@ -1,0 +1,23 @@
+# Add everything from Build/ directory to source control
+!Build/
+
+# Remove Build/* directory from source control
+Build/*
+
+# Add only .gitkeep from Build/ directory to source control
+!Build/.gitkeep
+
+# Add everything from Build/Output/ directory to source control
+!Build/Output/
+
+# Remove Build/Output/* directory from source control
+Build/Output/*
+
+# Add only .gitkeep from Build/Output/ directory to source control
+!Build/Output/.gitkeep
+
+# Remove .vscode/ directory from source control
+.vscode/*
+
+# Remove .vs/ directory from source control
+.vs/*
