@@ -2,7 +2,7 @@
 
 #include "Windows.h"
 
-#ifdef FLAME_WINDOW_APPLICATION
+#ifdef WINDOWS_APPLICATION
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow)
 {
     return Initialization::Main(__argc, __argv, nullptr);

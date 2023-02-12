@@ -9,7 +9,7 @@
         {
             "name": "flame-default",
             "hidden": true,
-            "generator": "Unix Makefiles",
+            "generator": "NMake Makefiles",
             "binaryDir": "${sourceDir}/Build/Output/${presetName}"
         },
         {
@@ -60,7 +60,7 @@
                 "flame-default-msvc-debug"
             ],
             "cacheVariables": {
-                "FLAME_CONSOLE_APPLICATION": "ON"
+                "WINDOWS_APPLICATION": "ON"
             }
         },
         {
@@ -71,7 +71,7 @@
                 "flame-default-msvc-debug"
             ],
             "cacheVariables": {
-                "FLAME_WINDOW_APPLICATION": "ON"
+                "WINDOWS_APPLICATION": "ON"
             }
         },
         {
@@ -80,10 +80,7 @@
             "description": "Flame window application using MSVC in Release mode",
             "inherits": [
                 "flame-default-msvc-release"
-            ],
-            "cacheVariables": {
-                "FLAME_CONSOLE_APPLICATION": "ON"
-            }
+            ]
         },
         {
             "name": "flame-window-msvc-release",
@@ -93,7 +90,7 @@
                 "flame-default-msvc-release"
             ],
             "cacheVariables": {
-                "FLAME_WINDOW_APPLICATION": "ON"
+                "WINDOWS_APPLICATION": "ON"
             }
         }
     ],

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1.0)
 
 project(Application)
 
-if(FLAME_WINDOW_APPLICATION)
+if(WINDOWS_APPLICATION)
     set(CMAKE_WIN32_EXECUTABLE ON)
 endif()
 

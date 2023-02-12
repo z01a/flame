@@ -6,13 +6,10 @@ set(FLAME_BOOTSTRAP "")
 
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
 
-option(FLAME_WINDOW_APPLICATION "We are building WINDOW application" OFF)
-option(FLAME_CONSOLE_APPLICATION "We are building CONSOLE application" OFF)
+option(WINDOWS_APPLICATION "We are building WINDOWS application" OFF)
 
-if(FLAME_WINDOW_APPLICATION)
-    add_definitions(-DFLAME_WINDOW_APPLICATION)
-else()
-    add_definitions(-DFLAME_CONSOLE_APPLICATION)
+if(WINDOWS_APPLICATION)
+    add_definitions(-DWINDOWS_APPLICATION)
 endif()
 
 project(Flame)
