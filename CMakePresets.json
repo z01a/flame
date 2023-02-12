@@ -60,7 +60,7 @@
                 "flame-default-msvc-debug"
             ],
             "cacheVariables": {
-                "WINDOWS_APPLICATION": "ON"
+                "WINDOWS_APPLICATION": "OFF"
             }
         },
         {
@@ -80,7 +80,10 @@
             "description": "Flame window application using MSVC in Release mode",
             "inherits": [
                 "flame-default-msvc-release"
-            ]
+            ],
+            "cacheVariables": {
+                "WINDOWS_APPLICATION": "OFF"
+            }
         },
         {
             "name": "flame-window-msvc-release",
@@ -96,28 +99,28 @@
     ],
     "buildPresets": [
         {
-            "name": "flare-console-msvc-debug",
+            "name": "flame-console-msvc-debug",
             "description": "Flame console application using MSVC in Debug mode",
-            "displayName": "Flare: Console Application (Debug)",
-            "configurePreset": "flare-console-msvc-debug"
+            "displayName": "flame: Console Application (Debug)",
+            "configurePreset": "flame-console-msvc-debug"
         },
         {
-            "name": "flare-window-msvc-debug",
+            "name": "flame-window-msvc-debug",
             "description": "Flame window application using MSVC in Debug mode",
-            "displayName": "Flare: Window Application (Debug)",
-            "configurePreset": "flare-window-msvc-debug"
+            "displayName": "Flame: Window Application (Debug)",
+            "configurePreset": "flame-window-msvc-debug"
         },
         {
-            "name": "flare-console-msvc-release",
+            "name": "flame-console-msvc-release",
             "description": "Flame console application using MSVC in Release mode",
-            "displayName": "Flare: Console Application (Release)",
-            "configurePreset": "flare-console-msvc-release"
+            "displayName": "Flame: Console Application (Release)",
+            "configurePreset": "flame-console-msvc-release"
         },
         {
-            "name": "flare-window-msvc-release",
+            "name": "flame-window-msvc-release",
             "description": "Flame window application using MSVC in Release mode",
-            "displayName": "Flare: Window Application (Release)",
-            "configurePreset": "flare-window-msvc-release"
+            "displayName": "Flame: Window Application (Release)",
+            "configurePreset": "flame-window-msvc-release"
         }
     ]
 }
